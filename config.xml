@@ -1,17 +1,17 @@
 <service>
   <serviceName>palabradeldia</serviceName>
-  <serviceDescription>Aprende una palabra en ingles distinta cada dia</serviceDescription>
+  <serviceDescription>Aprende una palabra distinta en ingles cada dia</serviceDescription>
   <creatorEmail>kumahavana@gmail.com</creatorEmail>
   <serviceCategory>academico</serviceCategory>
   <serviceUsage>
-    <![CDATA[
-      Escriba un nuevo email a {APRETASTE_EMAIL} y en el asunto ponga la palabra "palabradeldia"
+	<![CDATA[
+		Escriba un nuevo email a {APRETASTE_EMAIL} y en el asunto ponga la palabra "palabradeldia"
 
-      Por ejemplo:
-      Para: {APRETASTE_EMAIL}
-      Asunto: palabradeldia 
+		Por ejemplo:
+		Para: {APRETASTE_EMAIL}
+		Asunto: palabradeldia
 
-      Recibir&aacute; un email con la palabra en ingl&eacute;s de hoy, con su respectiva traducci&oacute;n, ejemplos y la categor&iacute;a gramatical a la que pertenece.
-    ]]>
-    </serviceUsage>
+		Recibir&aacute; un email con la palabra en ingl&eacute;s de hoy, con su respectiva traducci&oacute;n, ejemplos y la categor&iacute;a gramatical a la que pertenece.
+	]]>
+	</serviceUsage>
 </service>
