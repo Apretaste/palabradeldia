@@ -22,12 +22,6 @@ class palabradeldia extends Service
 
 		// and strip style
 		$description = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $text);
-
-		/*$description = str_ireplace(
-				['Part of speech', 'Example sentence', 'Sentence meaning', '<table','<th', 'adjective', 'sustantive'],
-				['Parte del habla', 'Oraci&oacute;n de ejemplo', 'Significado de la oraci&oacute;n','<table width="100%"', '<th align="right"', 'adjetivo','sustantivo'],
-			$description
-		);*/
 		$description = $this->parse($description);
 
 		$title = explode(":", $title);
@@ -44,6 +38,7 @@ class palabradeldia extends Service
 		);
 
 		$response = new Response();
+		$response->setCache("day");
 		$response->setResponseSubject("Palabra en Inglés del día");
 		$response->createFromTemplate("basic.tpl", $content);
 		return $response;
